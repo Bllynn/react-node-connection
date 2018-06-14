@@ -87,13 +87,13 @@ class App extends Component {
           }
           <div className="column form">
             <div>
+              {
+                //below we pass in 'name' as the property we want to
+                // update on state
+              }
               name<input
                 type="text"
                 value={this.state.name}
-                {
-                    //below we pass in 'name' as the property we want to
-                    // update on state
-                  }
                 onChange={e => this.handleChange('name', e.target.value)}
               />
             </div>
